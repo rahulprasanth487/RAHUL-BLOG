@@ -1,0 +1,11 @@
+.content
+{
+  max-width:800px;
+  margin: 0 auto;
+  padding: 10px;
+
+}
+
+.content p{
+  font-size: 15px;
+}
