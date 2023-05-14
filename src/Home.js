@@ -12,7 +12,7 @@ const Home =()=>
 
       //displaying the output
       
-      const { blogs, err } = useFetch("http://localhost:3000/blogs");
+      const { blogs, err } = useFetch("/blogs");
 
       // const handleBlog=(id)=>    
       // {
