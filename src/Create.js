@@ -12,7 +12,7 @@ const Create = () => {
       const handleSubmit=(e)=>{
             e.preventDefault();
             const blog={title,author,body};
-            fetch('http://localhost:3000/blogs',{
+            fetch('/blogs',{
                   method:'POST',
                   headers:{'Content-Type':'application/json'},
                   body:JSON.stringify(blog)
