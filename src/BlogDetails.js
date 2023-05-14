@@ -5,9 +5,9 @@ import "./Create.css"
 const BlogDetails = () => {
       const history=useHistory();
       const {id}=useParams();
-      const { blogs:blog, err } = useFetch("http://localhost:3000/blogs/"+id);
+      const { blogs:blog, err } = useFetch("/blogs/"+id);
       const handleClick=()=>{
-            fetch("http://localhost:3000/blogs/"+blog.id,{
+            fetch("/blogs/"+blog.id,{
                   method:'DELETE'
             }).then(()=>{
                   alert("Deleted successfully");
